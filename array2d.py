@@ -4,7 +4,6 @@
 
 def main():
 
-    #EI09
     print("Testes da classe Array2d\n")
     
     a = Array2d( (2,3), 3) # cria Array2d com valor inicial 3
@@ -30,7 +29,6 @@ def main():
     print('teste 4: Array2d a:')
     print(a)
 
-    #EG09: resize()     
     c = Array2d( (2,3), 3) # cria Array2d com valor inicial 3
     print(f'\nteste 5: Criação do Array2d c:')
     c[0,0] = 1
@@ -50,7 +48,6 @@ def main():
     print(f'size : {c.size}')
     print(f'data : {c.data}')
     
-    #EI10: reshape() e copy()
     print('\n======= Teste dos métodos reshape() e copy():')
     a = Array2d( (1,6), 3) # cria Array2d com valor inicial 3
     print(f'teste 7: Criação do Array2d a:')
@@ -88,7 +85,6 @@ def main():
     print(f'c: {c}')
     print()
     
-    #EG10
     print("\n=========== Teste dos métodos carregue() e carregue2():")
     lista = [1,2,3,4,5,6]
     a = Array2d( (2,3), 0)
@@ -112,7 +108,6 @@ def main():
     print(f'a:\n{a}\n')
     print(f'lista: {lista}')
     
-    #EI11 getlin(), getcol(), dot()
     
     print("\n========= Testes dos métodos getlin, getcol e dot da classe Array2d\n")
 
@@ -146,7 +141,7 @@ def main():
 
     print(f'teste 18: matmul(a,b)\n{matmul(a,b)}\n')
 
-    ### agora com Numpy
+    ### Numpy
     import numpy as np
     npa = np.array( lista_a ).reshape((2,3))
     print(f'teste 19: Numpy')
